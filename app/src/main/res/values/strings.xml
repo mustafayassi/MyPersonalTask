@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Personal Task</string>
+    <string name="toolbar_text">Have a nice day</string>
+    <string name="location_text">Basra</string>
+    <string name="temperatuer_text">30 C</string>
+    <string name="suggestion_text">suggestion</string>
+    <string name="next_text">Next</string>
+    <string name="today_text">Today</string>
+    <string name="date_text">14 April 2023</string>
+</resources>

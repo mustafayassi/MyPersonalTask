@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/toolbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/toolbar_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/toolbar_text_Size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:drawableRight="@drawable/ic_location"
+        android:text="@string/location_text"
+        android:textColor="@color/secoundry_black"
+        android:textSize="@dimen/location_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/weather_image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/weather_image"
+        app:layout_constraintBottom_toTopOf="@id/temperature_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temperature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperatuer_text"
+        android:textColor="@color/secoundry_black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suggestion_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginHorizontal="@dimen/margin_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temperature_text"/>
+
+    <Button
+        android:id="@+id/next_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="@dimen/margin_large"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textAllCaps="false"
+        android:background="@color/button_color"
+        android:text="@string/next_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:drawableRightCompat="@drawable/baseline_navigate_next_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temperature_text" />
+
+    <ImageView
+        android:id="@+id/clothes"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:src="@drawable/summer_1"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_text" />
+<TextView
+    android:id="@+id/today"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/today_text"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:layout_marginTop="@dimen/margin_medium"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginHorizontal="@dimen/margin_large"
+    app:layout_constraintTop_toBottomOf="@id/toolbar_text"/>
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_text"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_text"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
